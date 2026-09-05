@@ -29,6 +29,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Deploy to GitHub Pages
+
+This project is configured for GitHub Pages through GitHub Actions. Push changes to `main`, then enable Pages in the repository settings:
+
+1. Open **Settings > Pages** in the GitHub repository.
+2. Set **Source** to **GitHub Actions**.
+3. Wait for the **Deploy Next.js site to Pages** workflow to finish.
+
+The site will be available at [saravanan-dp.github.io/portfolio](https://saravanan-dp.github.io/portfolio/).
+
 ## Contact Saravanan
 
 - **Email:** [dp.saravanan4272@gmail.com](mailto:dp.saravanan4272@gmail.com)
