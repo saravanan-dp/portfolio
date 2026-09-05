@@ -1,58 +1,36 @@
-# 👨🏻‍💻 Web Developer Portfolio
+# Saravanan D | Portfolio
 
-A clean, high-performance portfolio template built with Next.js, Tailwind CSS, and Framer Motion. Designed for developers to showcase projects with smooth animations, responsive layouts, and zero setup headaches.
+Personal portfolio of Saravanan D, a Computer Science student and aspiring software developer from Madurai, Tamil Nadu.
 
-![Web Dev Portfolio Screenshot](./public/images/screenshot.png)
+The portfolio highlights my work across full-stack development, AI integration, and data-backed systems. It includes selected projects, technical skills, services, credentials, and ways to get in touch.
 
-Live Demo: [web-dev-portfolio-template.vercel.app](https://web-dev-portfolio-template.vercel.app/)
-
----
-
-## ✨ Features
-
-- 📌 One-click customization – Swap in your details (projects, skills, bio) in minutes
-- 🎨 Tailwind-powered – Easily tweak colors, fonts, and layouts
-- ✨ Silky animations – Page transitions and hover effects with Framer Motion
-- 📱  Fully responsive – Works flawlessly on mobile, tablet, and desktop
-- ⚡ Blazing fast – Next.js static generation for optimal performance
-
----
-
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/)
-- **Deployment:** [Vercel](https://vercel.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
 
----
+## Featured Projects
 
-## 📦 Installation
+- **Polytechnic College Chatbot:** A database-backed assistant for college admissions, courses, fees, facilities, and timings.
+- **MicroFinance:** A bilingual daily collection manager with customer, payment, authentication, and Firebase workflows.
+- **FighterCore:** An esports tournament platform with player registration, match management, payments, notifications, and administration.
 
-```bash
-git clone https://github.com/Alirazahaider/web-dev-portfolio
-```
-
-```bash
-cd web-dev-portfolio
-```
+## Run Locally
 
 ```bash
+git clone https://github.com/saravanan-dp/portfolio.git
+cd portfolio
 npm install
-```
-
-```bash
 npm run dev
 ```
 
-## 💌 Get In Touch
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Thank you for checking out this project! If you have any questions, suggestions, would like to collaborate, or need my development services:
+## Contact Saravanan
 
-[![Email](https://img.shields.io/badge/-Email-0e5255?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alicodespace@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0e5255?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alirazaweb)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-0e5255?style=for-the-badge&logo=google-chrome&logoColor=white)](https://alicodez.vercel.app/)
-
-⭐ Support the project by starring the repository!
-[![GitHub stars](https://img.shields.io/github/stars/Alirazahaider/web-dev-portfolio?style=social)](https://github.com/Alirazahaider/web-dev-portfolio)
+- **Email:** [dp.saravanan4272@gmail.com](mailto:dp.saravanan4272@gmail.com)
+- **GitHub:** [github.com/saravanan-dp](https://github.com/saravanan-dp)
+- **LinkedIn:** [linkedin.com/in/saravanan-dp](https://www.linkedin.com/in/saravanan-dp)

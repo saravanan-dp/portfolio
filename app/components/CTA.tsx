@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/app/lib/animations'
+import { contactEmail } from '@/app/lib/constants'
 import Link from 'next/link'
 import { smoothScrollTo } from '@/app/utils/scroll'
 
@@ -29,7 +30,7 @@ export default function CTA() {
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link
-                            href="mailto:dp.saravanan4272@gmail.com"
+                            href={`mailto:${contactEmail}`}
                             className="px-8 py-4 bg-[#0b1014] text-[#d8f36b] hover:bg-[#24332d] transition-colors font-medium"
                         >
                             Get In Touch

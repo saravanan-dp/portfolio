@@ -28,6 +28,8 @@ export const socialLinks = [
     { name: 'Email', url: 'mailto:dp.saravanan4272@gmail.com', icon: FiMail },
 ]
 
+export const contactEmail = 'dp.saravanan4272@gmail.com'
+
 export const skills = [
     { name: 'React', icon: FaReact },
     { name: 'TypeScript', icon: SiTypescript },
