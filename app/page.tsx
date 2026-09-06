@@ -6,10 +6,13 @@ import Services from '@/app/components/Services'
 import Credentials from '@/app/components/Credentials'
 import CTA from '@/app/components/CTA'
 import Footer from '@/app/components/Footer'
+import PortfolioContentLoader from '@/app/components/PortfolioContentLoader'
 
 export default function Home() {
   return (
-    <main className=''>
+    <>
+      <PortfolioContentLoader />
+      <main data-portfolio-content className=''>
       <Header />
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <Hero />
@@ -20,6 +23,7 @@ export default function Home() {
         <CTA />
         <Footer />
       </div>
-    </main>
+      </main>
+    </>
   )
 }

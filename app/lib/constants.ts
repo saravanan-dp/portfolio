@@ -48,6 +48,8 @@ export const skills = [
     { name: 'Git & GitHub', icon: FaGitAlt },
 ]
 
+export const skillIcons = Object.fromEntries(skills.map((skill) => [skill.name, skill.icon])) as Record<string, typeof FiCode>
+
 export const projects = [
     {
         name: 'Polytechnic College Chatbot',
@@ -106,3 +108,14 @@ export const services = [
         icon: FiZap
     }
 ]
+
+export const serviceIcons = Object.fromEntries(services.map((service) => [service.title, service.icon])) as Record<string, typeof FiCode>
+
+export const iconSuggestions = Array.from(new Set([
+    ...skills.map((skill) => skill.name),
+    ...services.map((service) => service.title),
+    'JavaScript', 'Node.js', 'Next.js', 'Vue', 'Angular', 'Svelte', 'Django', 'Flask',
+    'PHP', 'Laravel', 'Kotlin', 'Swift', 'Go', 'Rust', 'Docker', 'Kubernetes',
+    'AWS', 'Azure', 'Google Cloud', 'GitHub', 'GitLab', 'PostgreSQL', 'Redis',
+    'GraphQL', 'Tailwind CSS', 'Figma', 'Linux', 'TensorFlow', 'OpenAI',
+]))

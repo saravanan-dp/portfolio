@@ -2,9 +2,17 @@
 
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from '@/app/lib/animations'
-import { skills } from '@/app/lib/constants'
+import { skillIcons } from '@/app/lib/constants'
+import { usePortfolioContent } from '@/app/lib/usePortfolioContent'
 
 export default function About() {
+    const { skills } = usePortfolioContent()
+
+    const renderSkillIcon = (icon: string) => {
+        if (/^(https?:\/\/|data:image\/)/i.test(icon)) return <img src={icon} alt="" className="h-5 w-5 object-contain" />
+        const Icon = skillIcons[icon] || skillIcons.React
+        return <Icon className="h-5 w-5 text-[#d8f36b]" />
+    }
     return (
         <motion.section
             initial="hidden"
@@ -62,7 +70,7 @@ export default function About() {
                                 key={skill.name}
                                 className="px-4 py-2 bg-[#11191b] border border-[#253331] flex items-center gap-2 text-sm"
                             >
-                                <skill.icon className="w-5 h-5 text-[#d8f36b]" />
+                                {renderSkillIcon(skill.icon)}
                                 <span>{skill.name}</span>
                             </div>
                         ))}

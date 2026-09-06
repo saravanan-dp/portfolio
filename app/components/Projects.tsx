@@ -3,10 +3,11 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from '@/app/lib/animations'
-import { projects } from '@/app/lib/constants'
+import { usePortfolioContent } from '@/app/lib/usePortfolioContent'
 import { FiArrowUpRight, FiChevronLeft, FiChevronRight, FiGithub, FiInfo, FiX } from 'react-icons/fi'
 
 export default function Projects() {
+    const { projects } = usePortfolioContent()
     const [activeProject, setActiveProject] = useState(0)
     const [viewerProject, setViewerProject] = useState<typeof projects[number] | null>(null)
 
@@ -41,7 +42,7 @@ export default function Projects() {
                 <div className="relative h-64 md:h-[30rem] overflow-hidden bg-[#162327]">
                     {projects.map((item, index) => (
                         <div key={item.name} className={`absolute inset-0 transition-opacity duration-700 ${index === activeProject ? 'opacity-100' : 'opacity-0'}`}>
-                            <div className="absolute inset-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${item.image})` }} />
+                            <div data-editor-label={`${item.name} screenshot`} className="absolute inset-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${item.image})` }} />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0b1014] via-[#0b1014]/50 to-transparent" />
                         </div>
                     ))}
@@ -69,7 +70,7 @@ export default function Projects() {
                 <div className="scrollbar-hide flex gap-3 overflow-x-auto px-5 pb-5 md:px-8 md:pb-8 snap-x">
                     {projects.map((item, index) => (
                         <button key={item.name} onClick={() => { setActiveProject(index); setViewerProject(item) }} className={`relative shrink-0 w-32 md:w-44 aspect-video overflow-hidden border-2 snap-start ${index === activeProject ? 'border-[#d8f36b]' : 'border-transparent opacity-60 hover:opacity-100'}`} aria-label={`Open details for ${item.name}`}>
-                            <span className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-[#162327]" style={{ backgroundImage: `url(${item.image})` }} />
+                            <span data-editor-label={`${item.name} thumbnail`} className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-[#162327]" style={{ backgroundImage: `url(${item.image})` }} />
                             <span className="absolute inset-x-0 bottom-0 bg-[#0b1014]/85 px-2 py-1 text-left text-[10px] text-[#e8f0ed] truncate">{item.name}</span>
                         </button>
                     ))}
@@ -82,7 +83,7 @@ export default function Projects() {
                         <div className="grid lg:grid-cols-[1.15fr_1fr]">
                             <div className="min-h-64 bg-[#162327] p-4 md:p-8 lg:min-h-[34rem] lg:p-10">
                                 <div className="relative h-full min-h-56 overflow-hidden border border-[#40534d] bg-[#0b1014]">
-                                    <img src={viewerProject.image} alt={`${viewerProject.name} project screenshot`} className="h-full min-h-56 w-full object-contain object-center" />
+                                    <img data-editor-label={`${viewerProject.name} detail screenshot`} src={viewerProject.image} alt={`${viewerProject.name} project screenshot`} className="h-full min-h-56 w-full object-contain object-center" />
                                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0b1014] to-transparent p-5 pt-16"><p className="font-mono text-xs uppercase tracking-[0.2em] text-[#d8f36b]">Project screenshot</p></div>
                                 </div>
                             </div>
