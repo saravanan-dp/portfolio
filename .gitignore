@@ -15,6 +15,7 @@
 
 # testing
 /coverage
+/DEVELOPMENT_COMMANDS.txt
 
 # next.js
 /.next/
@@ -52,3 +53,4 @@ next-env.d.ts
 *.swp
 *.swo
 Thumbs.db
+
