@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { fadeIn, slideIn, staggerContainer } from '@/app/lib/animations'
-import { socialLinks } from '@/app/lib/constants'
+import { publicAssetPath, socialLinks } from '@/app/lib/constants'
 import Link from 'next/link'
 import { smoothScrollTo } from '@/app/utils/scroll'
 
@@ -111,7 +111,7 @@ export default function Hero() {
                         <div className="relative h-full w-full overflow-hidden border border-[#d8f36b]/40 bg-[#162327]">
                             {!profileImageFailed ? (
                                 <img
-                                    src="/saravanan.png"
+                                    src={publicAssetPath('/saravanan.png')}
                                     alt="Saravanan D profile"
                                     className="h-full w-full object-cover object-center"
                                     onError={() => setProfileImageFailed(true)}

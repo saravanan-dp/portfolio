@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { navLinks } from '@/app/lib/constants'
+import { navLinks, publicAssetPath } from '@/app/lib/constants'
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { smoothScrollTo } from '@/app/utils/scroll'
@@ -45,7 +45,7 @@ export default function Header() {
 
                 <div className="flex items-center gap-4">
                     <a
-                        href="/Saravana.pdf"
+                        href={publicAssetPath('/Saravana.pdf')}
                         download="Saravanan-D-Resume.pdf"
                         className="hidden sm:inline-block px-4 py-2 border border-[#d8f36b] text-[#d8f36b] hover:bg-[#d8f36b] hover:text-[#0b1014] transition-colors"
                     >
@@ -86,7 +86,7 @@ export default function Header() {
 
                             <div className="mt-6 pt-4 border-t border-gray-800">
                                 <a
-                                    href="/Saravana.pdf"
+                                    href={publicAssetPath('/Saravana.pdf')}
                                     download="Saravanan-D-Resume.pdf"
                                     className="block w-full text-center px-4 py-3 border border-[#d8f36b] bg-[#d8f36b] font-bold text-[#0b1014] hover:bg-[#e6ff93] transition-colors"
                                 >

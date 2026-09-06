@@ -30,6 +30,8 @@ export const socialLinks = [
 
 export const contactEmail = 'dp.saravanan4272@gmail.com'
 
+export const publicAssetPath = (path: string) => `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}${path}`
+
 export const skills = [
     { name: 'React', icon: FaReact },
     { name: 'TypeScript', icon: SiTypescript },
@@ -50,7 +52,7 @@ export const projects = [
     {
         name: 'Polytechnic College Chatbot',
         number: '01',
-        image: '/images/p1-chatbot.png',
+        image: publicAssetPath('/images/p1-chatbot.png'),
         description: 'A college information assistant for admissions, courses, fees, facilities, and timings, with database-driven responses and chat history.',
         overview: 'Polytechnic College Chatbot turns common college enquiries into a searchable conversational experience. It keeps answers consistent while preserving chat history for a smoother student journey.',
         features: ['Admission and course information', 'Fees, facilities, and timing queries', 'Database-backed responses', 'Persistent chat history'],
@@ -61,7 +63,7 @@ export const projects = [
     {
         name: 'MicroFinance',
         number: '02',
-        image: '/images/p2-microfinance.png',
+        image: publicAssetPath('/images/p2-microfinance.png'),
         description: 'A daily collection manager for customers, areas, payments, and authentication, backed by Firebase with bilingual support.',
         overview: 'MicroFinance gives collection teams a single place to organize customers, areas, and daily payments. Firebase keeps the data available across devices and supports a bilingual workflow.',
         features: ['Customer and area management', 'Daily payment tracking', 'Firebase authentication and storage', 'Bilingual interface support'],
@@ -72,7 +74,7 @@ export const projects = [
     {
         name: 'FighterCore',
         number: '03',
-        image: '/images/p3-fightercore.png',
+        image: publicAssetPath('/images/p3-fightercore.png'),
         description: 'An esports tournament platform with player registration, real-time match management, payments, notifications, and admin controls.',
         overview: 'FighterCore is a tournament operations platform built for competitive gaming. It connects player registration with live match updates, payments, notifications, and administration.',
         features: ['Player registration and profiles', 'Real-time match management', 'Payments and notifications', 'Admin controls and PWA support'],
