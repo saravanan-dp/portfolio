@@ -70,7 +70,7 @@ export const projects = [
         overview: 'MicroFinance gives collection teams a single place to organize customers, areas, and daily payments. Firebase keeps the data available across devices and supports a bilingual workflow.',
         features: ['Customer and area management', 'Daily payment tracking', 'Firebase authentication and storage', 'Bilingual interface support'],
         technologies: ['React', 'TypeScript', 'Firebase'],
-        githubUrl: 'https://github.com/saravanan-dp',
+        githubUrl: 'https://github.com/saravanan-dp/MicroFinance',
         liveUrl: 'https://mraccountant.web.app'
     },
     {
@@ -81,7 +81,7 @@ export const projects = [
         overview: 'FighterCore is a tournament operations platform built for competitive gaming. It connects player registration with live match updates, payments, notifications, and administration.',
         features: ['Player registration and profiles', 'Real-time match management', 'Payments and notifications', 'Admin controls and PWA support'],
         technologies: ['React', 'TypeScript', 'Firebase', 'PWA'],
-        githubUrl: 'https://github.com/saravanan-dp',
+        githubUrl: 'https://github.com/saravanan-dp/FighterCore',
         liveUrl: 'https://fightercore.web.app'
     }
 ]
