@@ -59,7 +59,7 @@ export const projects = [
         overview: 'Polytechnic College Chatbot turns common college enquiries into a searchable conversational experience. It keeps answers consistent while preserving chat history for a smoother student journey.',
         features: ['Admission and course information', 'Fees, facilities, and timing queries', 'Database-backed responses', 'Persistent chat history'],
         technologies: ['Python', 'Flask', 'MySQL'],
-        githubUrl: 'https://github.com/saravanan-dp',
+        githubUrl: 'https://github.com/saravanan-dp/collage-chatbot',
         liveUrl: 'https://github.com/saravanan-dp'
     },
     {
